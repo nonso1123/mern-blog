@@ -1,5 +1,5 @@
 import axios from "axios";
-const URL = "http://localhost:3000";
+const URL = import.meta.env.VITE_BASE_URL;
 
 export async function getPosts() {
 	const response = await axios.get(`${URL}/posts`);
